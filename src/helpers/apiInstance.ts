@@ -74,3 +74,12 @@ export const patchJson = async (add: string, body: any) => {
   });
   return response.data;
 };
+
+export const patchForm = async (url: string, body: any) => {
+  const response = await axios.patch(url, body, {
+    headers: {
+      "Content-Type": "multipart/form-data",
+    },
+  });
+  return response.data;
+};
