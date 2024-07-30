@@ -109,19 +109,23 @@ const Contributor = () => {
           `http://localhost:8000/api/profile/profiles?status=accepted`
         );
         if (response) {
+          console.log("response",response)
           const contributorsWithBalances = await Promise.all(
-            response.map(async (contributer: any) => {
-              const balanceInEther = await fetchBalance(
-                contributer.walletAddress
-              );
-              return { ...contributer, ethAmount: balanceInEther };
-            })
+            response
+              .filter((item: any) => item.role === "fan" || item.role === "celebrity")
+              .map(async (contributer: any) => {
+                const balanceInEther = await fetchBalance(
+                  contributer.walletAddress
+                );
+                return { ...contributer, ethAmount: balanceInEther };
+              })
           );
           setContributors(contributorsWithBalances);
-          setLoading(true)
+          setLoading(true);
         }
       } catch (error) {
-        console.log(error);
+        console.error("Error fetching data:", error);
+        setLoading(false);
       }
     })();
   }, []);
@@ -141,22 +145,23 @@ const Contributor = () => {
         </h3>
       </div>
       <div className="hidden md:block w-full my-9">
-        {loading ? ( <Slider {...settings1}>
-          {contributors.map((contributer, index) => (
-            <ContributorCard
-              key={index}
-              walletAddress={contributer.walletAddress}
-              name={contributer.username}
-              img={contributer.profilePic}
-              ethAmount={contributer.ethAmount}
-            />
-          ))}
-        </Slider>) : (
+        {loading ? (
+          <Slider {...settings1}>
+            {contributors.map((contributer, index) => (
+              <ContributorCard
+                key={index}
+                walletAddress={contributer.walletAddress}
+                name={contributer.username}
+                img={contributer.profilePic}
+                ethAmount={contributer.ethAmount}
+              />
+            ))}
+          </Slider>
+        ) : (
           <div className=" flex justify-center items-center mx-auto">
-          <Loader classname=" h-[300px] " />
+            <Loader classname=" h-[300px] " />
           </div>
         )}
-       
       </div>
       <div className="block md:hidden w-full my-9">
         <Slider {...settings2}>

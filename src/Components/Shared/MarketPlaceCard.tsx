@@ -119,7 +119,7 @@ const MarketPlaceCard: React.FC<MarketCardProps> = ({
             <p className="text-[#cfcfcf] text-xs">{userDisplayName}</p>
           </div>
         </div>
-        <FaRegHeart />
+        {/* <FaRegHeart /> */}
       </div>
       <div className=" relative md:h-52 h-60 mb-2">
         {/* <img src={image} alt="img " className=" rounded-lg h-full w-full" /> */}
