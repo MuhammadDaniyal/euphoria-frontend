@@ -41,6 +41,21 @@ export const postJson = async (url: string, body: any) => {
   }
 };
 
+export const postForm = async (url: string, body: any) => {
+  try {
+    const response = await axios.post(url, body, {
+      headers: {
+        "Content-Type": "multipart/form-data",
+      },
+    });
+    return response.data;
+
+  } catch (error) {
+    throw error
+
+  }
+};
+
 export const patchJsonUrl = async (url: string, body: any) => {
   const response = await axios.patch(url, body, {
     headers: {

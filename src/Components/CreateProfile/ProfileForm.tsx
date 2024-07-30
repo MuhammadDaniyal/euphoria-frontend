@@ -9,11 +9,10 @@ import ValidationError from "../Shared/Validation/ValidationError";
 import StyledButton from "../Shared/StyledButton";
 import ImageSection from "../CreateCollection/ImageSection";
 import { useNavigate, useParams } from "react-router-dom";
-import { postJson } from "../../helpers/apiInstance";
+import { postForm, postJson } from "../../helpers/apiInstance";
 import { setVoting, getAdd } from "../../helpers/functions/page";
 import { useEffect } from "react";
 import { errorToastify } from "../../utils/toast";
-
 
 const initialValues = {
   profilePic: "",
@@ -49,17 +48,14 @@ const ProfileForm = ({ type }: { type: string }) => {
   } = useFormik({
     initialValues: initialValues,
     validationSchema:
-      type === "celebrity"
+      param.type === "celebrity"
         ? CreateCelebrityProfileSchema
         : CreateFanProfileSchema,
     onSubmit: async (values, action) => {
-      console.log("values",values);
       const formData = new FormData();
 
       formData.append("profilePic", values.profilePic);
-      
-      console.log("Profile Pic==>",values.profilePic)
-      
+
       formData.append("coverPic", values.coverPic);
       formData.append("backgroundPic", values.backgroundPic);
       formData.append("username", values.username);
@@ -74,34 +70,34 @@ const ProfileForm = ({ type }: { type: string }) => {
         formData.append("kycDocument", values.kycDocument);
       }
 
-      formData.forEach((item)=>{
-        console.log("item",item)
-      })
-
       try {
         //un coment above line and write down profile creation api below:
-        const res = await postJson(
+        const res = await postForm(
           `http://localhost:8000/api/profile`,
           formData
         );
         if (res) {
           if ((param.type as any) === "celebrity") {
-            const trans = await setVoting()
+            const trans = await setVoting();
             await trans.wait();
             console.log("Profile submitted successfully");
-            const add = await getAdd()
+            const add = await getAdd();
             navigate(`/proposal/${add}`);
-          }
-          else {
-            const add = await getAdd()
+          } else {
+            const add = await getAdd();
             navigate(`/profile/${add}`);
           }
-
         }
       } catch (error) {
-        if (error && (error as { reason: string }).reason) { errorToastify((error as { reason: string }).reason) }
-        else if (error && (error as { message: string }).message) { errorToastify((error as { message: string }).message) }
-        else { if (error) { errorToastify(String(error)) } }
+        if (error && (error as { reason: string }).reason) {
+          errorToastify((error as { reason: string }).reason);
+        } else if (error && (error as { message: string }).message) {
+          errorToastify((error as { message: string }).message);
+        } else {
+          if (error) {
+            errorToastify(String(error));
+          }
+        }
         console.error("Error submitting profile", error);
       }
     },
@@ -109,21 +105,23 @@ const ProfileForm = ({ type }: { type: string }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const add = await getAdd()
-        console.log("ADD==>",add)
-        setFieldValue("walletAddress", add)
-
+        const add = await getAdd();
+        console.log("ADD==>", add);
+        setFieldValue("walletAddress", add);
       } catch (error) {
-        if (error && (error as { reason: string }).reason) { errorToastify((error as { reason: string }).reason) }
-        else if (error && (error as { message: string }).message) { errorToastify((error as { message: string }).message) }
-        else { if (error) { errorToastify(String(error)) } }
-
+        if (error && (error as { reason: string }).reason) {
+          errorToastify((error as { reason: string }).reason);
+        } else if (error && (error as { message: string }).message) {
+          errorToastify((error as { message: string }).message);
+        } else {
+          if (error) {
+            errorToastify(String(error));
+          }
+        }
       }
-    }
-    fetchData()
-
-  }, [])
-
+    };
+    fetchData();
+  }, []);
 
   return (
     <>
