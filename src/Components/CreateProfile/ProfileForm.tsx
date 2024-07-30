@@ -73,7 +73,7 @@ const ProfileForm = ({ type }: { type: string }) => {
       try {
         //un coment above line and write down profile creation api below:
         const res = await postForm(
-          `http://localhost:8000/api/profile`,
+          `https://euphoria-backend-production.up.railway.app/api/profile`,
           formData
         );
         if (res) {

@@ -80,7 +80,7 @@ export const getAdd = async () => {
 
 export const fetchUserProfiles = async () => {
   try {
-    const response = await fetch(`http://localhost:8000/api/profile/names?status=accepted`);
+    const response = await fetch(`https://euphoria-backend-production.up.railway.app/api/profile/names?status=accepted`);
     if (!response.ok) {
       throw new Error('Failed to fetch user profiles');
     }

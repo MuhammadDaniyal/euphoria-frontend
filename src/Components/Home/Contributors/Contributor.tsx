@@ -106,7 +106,7 @@ const Contributor = () => {
     (async () => {
       try {
         const response = await getJson(
-          `http://localhost:8000/api/profile/profiles?status=accepted`
+          `https://euphoria-backend-production.up.railway.app/api/profile/profiles?status=accepted`
         );
         if (response) {
           console.log("response",response)
