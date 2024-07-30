@@ -1,4 +1,4 @@
-import abi from "../../contract/nft14.json"
+import abi from "../../contract/nft15.json"
 import { ethers } from "ethers";
 import { toast } from 'react-toastify';
 import { requestAccount as connectWallet } from "../ConnectWallet/connect"
@@ -6,35 +6,8 @@ import { NFTStorage, File } from 'nft.storage'
 // const fs = require('fs')
 const FormData = require('form-data')
 
-
-// import fs from 'fs'
-// import { fetch } from "nft.storage/dist/src/platform";
-
-// import { env } from 'node:process';
-
-// const contractAddress =env.NEXT_PUBLIC_CONTRACT_ADDRESS;
-// const contractAddress = "0xa7102196764Aae31E20F873e15A54c3f7273C3C6";
-//const contractAddress = "0xF2C344639Eb5D461C38Aa9fDC54FA6D4514fA522"; //original address // Taneer
-//const contractAddress = "0x8fbAE3f486872c5B5AbBBFfcEdF707A7aE6E7FE8"; //original address // Rafay
-// const contractAddress = "0x5b35c05b8b601824BE2690B1F06e79764191AD8C"; //original address // Hammad
-// const contractAddress = "0x1261056220c5b1e49e6020c69716a0baa8bec8cf"; //original address // Hammad
-// const contractAddress = "0xa150B6422BD12c496F4583bb225b58E16e838eE7"; //original address | Hammad | nft2.json
-// const contractAddress = "0x056F7Aa7a194BEdeB0851F984b781234717584b8"; //original address | Hammad | nft3.json
-//const contractAddress = "0xA3cE24Ef4c47727097497b6b36A43A4E1cDc7491"; //original address | Hammad | nft4.json
-// const contractAddress = "0xEA75e03Cc2F9d253a04F0eD9d1A18a716601aC93"; //original address | Hammad | nft4.json
-//const contractAddress = "0xBa822757E7B4cBE171343A04AA580A0D81560a38"; //original address | Hammad | nft5.json
-// const contractAddress = "0xa1DCC67FEc4A143167e654ddd39B1478C393c1De"; //original address | Hammad | nft5.json
-// const contractAddress = "0xaf99d56B9D423AdF575B96696E9829069dC9ba70"; //original address | Hammad | nft6.json
-// const contractAddress = "0x5918ca900de2BfAD650c19BeDc869dE924d8B449"; //original address | Hammad | nft7.json
-// const contractAddress = "0xd0fc695eDE5165014733C4aF66F95590ac9B2b3d"; //original address | Hammad | nft8.json
-// const contractAddress = "0xFB241a47209dfC5Bff6C4b0cAf2EeA12105a9D2b"; //original address | Hammad | nft9.json
-// const contractAddress = "0x294D57A40dBA49f4ABE597C3DE809073e1463D16"; //original address | taneer Chutiap | nft10.json
-// const contractAddress = "0xaFb6b3Cd363f52bD0007bc2dEB68E661E85Ab66C"; //original address | Hammad | nft10.json
-// const contractAddress = "0x26721A5B23fDD94DEA08fE53E28D44b21A8b9103"; //original address | Hammad | nft11.json
-// const contractAddress = "0xB99e14127005a24366C053d9E78Cd8e69b189c2c"; //original address | Hammad | nft12.json
-// const contractAddress = "0xb3283F89a58369756F84ab013a7dF7484f2664c0"; //original address | Hammad | nft12.json latest
-// const contractAddress = "0xD8A7C049aE51Ab86b7E25b601D0042107894c754"; //original address | Hammad | nft12.json
-const contractAddress = "0x9de056571aF6B01Ef92B4260B88Ac4a99956C100"; //original address | Daniyal | nft14.json
+// const contractAddress = "0x9de056571aF6B01Ef92B4260B88Ac4a99956C100"; //original address | Daniyal | nft14.json
+const contractAddress = "0xe46C6bb4d43DB1e1596134aFc3DfDE561fc758Ab"; //original address | Daniyal2 | nft15.json
 
 const contractABI = abi.abi;
 
