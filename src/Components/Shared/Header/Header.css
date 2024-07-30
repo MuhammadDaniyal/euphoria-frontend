@@ -1,0 +1,88 @@
+.scroll-header {
+  position: sticky !important;
+  top: -70px;
+  width: 100%;
+  background-color: #1f2045;
+  z-index: 99;
+  transform: translateY(70px);
+  transition: transform 500ms ease;
+  -webkit-transition: transform 500ms ease;
+}
+
+.headerInputSearch {
+  width: 100%;
+  line-height: 26px;
+  padding: 10px 16px 10px 50px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 0.12);
+  color: rgb(255, 255, 255);
+  backdrop-filter: blur(20px);
+  transition: background-color 0.2s cubic-bezier(0.05, 0, 0.2, 1) 0s,
+    border-color 0.2s cubic-bezier(0.05, 0, 0.2, 1) 0s;
+}
+
+.headerInputSearch:hover {
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.headerInputSearchSlash {
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  top: 10px;
+  right: 10px;
+  height: 26px;
+  min-width: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+.headerConnectBtn {
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 0.12);
+  color: rgb(255, 255, 255);
+  backdrop-filter: blur(20px);
+  transition: background-color 0.2s cubic-bezier(0.05, 0, 0.2, 1) 0s,
+    border-color 0.2s cubic-bezier(0.05, 0, 0.2, 1) 0s;
+  transition: all ease-in-out 300ms;
+}
+
+.headerConnectBtn:hover {
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all ease-in-out 300ms;
+}
+
+input::-webkit-calendar-picker-indicator {
+  display: none !important;
+  opacity: 0 !important;
+  background: inherit !important;
+}
+
+
+/* <datalist> and <option> styling */
+datalist {
+  position: absolute;
+  max-height: 20em;
+  border: 0 none;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+datalist option {
+  font-size: 0.8em;
+  padding: 0.3em 1em;
+  background-color: #ccc;
+  cursor: pointer;
+}

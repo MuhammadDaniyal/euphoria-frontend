@@ -1,0 +1,356 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: "CodeNewRoman";
+  src: url("./assets/code-new-roman-cufonfonts/Code\ New\ Roman.otf")
+      format("truetype"),
+    url("./assets/code-new-roman-cufonfonts/Code\ New\ Roman\ b.otf")
+      format("truetype"),
+    url("./assets/code-new-roman-cufonfonts/Code\ New\ Roman\ i.otf")
+      format("truetype");
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+/* ---------------------- HOMEPAGE BACKGROUND ---------------------- */
+.homeBgImg {
+  /* background-image: url("./assets/images/BgHome–2-wecompress.png"); */
+  /* background-image: url("./assets/images/homebgfinal.jpg"); */
+  background-image: url("./assets/images/background-images/bg-final-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.homeBgGrid {
+  background-image: url("./assets/images/background-images/grid-herosection.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* ---------------------- MARKETPLACE BACKGROUND ---------------------- */
+.marketPlaceBgImg {
+  /* background-image: url("./assets/images/Home–2b.png"); */
+  background-image: url("./assets/images/background-images/bg-final-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.marketPlaceBoxShadow {
+  background: rgba(31, 32, 69, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+
+.CodeNewRomanFont {
+  font-family: "CodeNewRoman", sans-serif;
+}
+
+h3 {
+  font-family: "CodeNewRoman", sans-serif;
+}
+
+.BarlowFont {
+  font-family: "Barlow", sans-serif;
+}
+
+.scrollbarHide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbarHide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.lfr-direction {
+  direction: ltr !important;
+}
+
+/* ---------------------- SCROLL BAR ---------------------- */
+
+.scroll-marketplace {
+  overflow-y: scroll;
+  direction: rtl;
+}
+
+.scroll-marketplace::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scroll-marketplace::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+.scroll-marketplace::-webkit-scrollbar-track {
+  background-color: none;
+}
+
+/*  */
+.scroll-marketplace-dropdown {
+  overflow-y: scroll;
+}
+
+.scroll-marketplace-dropdown::-webkit-scrollbar {
+  width: 3px;
+}
+
+.scroll-marketplace-dropdown::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+.scroll-marketplace-dropdown::-webkit-scrollbar-track {
+  background-color: none;
+}
+
+/* ---------------------- CRICLE ANIMATION ---------------------- */
+.circle {
+  border-color: #518eff;
+  animation: colorChange 8s linear infinite;
+  -webkit-animation: colorChange 8s linear infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    border-color: #518eff;
+  }
+
+  20% {
+    border-color: #b725ff;
+  }
+
+  40% {
+    border-color: #518eff;
+  }
+
+  60% {
+    border-color: #b725ff;
+  }
+
+  80% {
+    border-color: #518eff;
+  }
+
+  100% {
+    border-color: #b725ff;
+  }
+}
+
+/* ------------- MARKET PLACE PAGE BACKGROUNDS ----------------------- */
+
+.bgTabImgSports {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.29), rgba(65, 61, 61, 0.77)),
+    url("./assets/images/sportsbg.jpg");
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-repeat: no-repeat;
+}
+
+.bgTabImgMusic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.29), rgba(65, 61, 61, 0.77)),
+    url("./assets/images/musicbg.png");
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-repeat: no-repeat;
+}
+
+.bgTabImgArt {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.29), rgba(65, 61, 61, 0.77)),
+    url("./assets/images/art_bg.png");
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-repeat: no-repeat;
+}
+
+.bgTabImgGame {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.29), rgba(65, 61, 61, 0.77)),
+    url("./assets/images/gamebg.png");
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-repeat: no-repeat;
+}
+
+/* ------------- MARKET PLACE COMPONENT ----------------------- */
+
+.card {
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 260px;
+  /* height: 100%; */
+  background: linear-gradient(
+    90deg,
+    rgba(226, 37, 122, 0.4) 0%,
+    rgba(86, 59, 218, 0.4) 100%
+  );
+  border-radius: 8px;
+  transition: transform 0.3s;
+  z-index: -1;
+}
+
+.card:hover:before {
+  transform: rotate(5deg) translateY(5%);
+}
+
+.marketplaceCardTimerbg {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 6px;
+  /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+}
+
+/* ---------------------- COLLECTION FORM ---------------------- */
+
+.collectionforminput {
+  width: 100%;
+  line-height: 26px;
+  padding: 8px 16px 8px 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 0.12);
+  color: rgb(255, 255, 255);
+  backdrop-filter: blur(20px);
+  transition: background-color 0.2s cubic-bezier(0.05, 0, 0.2, 1) 0s,
+    border-color 0.2s cubic-bezier(0.05, 0, 0.2, 1) 0s;
+}
+
+.collectionforminput:hover {
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.collectiondropdown {
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 0.12);
+  color: rgb(255, 255, 255);
+  backdrop-filter: blur(20px);
+  transition: background-color 0.2s cubic-bezier(0.05, 0, 0.2, 1) 0s,
+    border-color 0.2s cubic-bezier(0.05, 0, 0.2, 1) 0s;
+}
+
+.disabled {
+  background-color: rgba(146, 146, 146, 0.12);
+}
+
+/* ---------------------- PROFILE PAGE ---------------------- */
+
+.profilePageBtn {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  background: linear-gradient(to right, #518eff 35%, #b725ff 88%);
+  position: relative;
+  z-index: 1;
+  /* margin-right: 6px; */
+  transition: all 0.3s ease-out 0s;
+}
+
+.profilePageBtn:hover:before {
+  transform: scale(1);
+}
+
+.profilePageBtn:before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background: linear-gradient(to right, #b725ff 35%, #518eff 88%);
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 768px) {
+  .profilePageBtn {
+    padding: 6px 16px;
+    font-size: 12px;
+  }
+}
+
+/* ---------------------- RANKING PAGE ---------------------- */
+
+.rankingInputSearch {
+  width: 100%;
+  line-height: 26px;
+  padding: 5.5px 16px 5.5px 50px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 0.12);
+  color: rgb(255, 255, 255);
+  backdrop-filter: blur(20px);
+  transition: background-color 0.2s cubic-bezier(0.05, 0, 0.2, 1) 0s,
+    border-color 0.2s cubic-bezier(0.05, 0, 0.2, 1) 0s;
+}
+
+.rankingInputSearch:hover {
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.rankingInputSearchSlash {
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  top: 7px;
+  right: 10px;
+  height: 24px;
+  min-width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+.bg-text-image {
+  background-image: url("./assets/images/Bg-Error.jpg");
+  font-family: sans-serif;
+  font-weight: 900;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* ------------ COLLECTION COMPONENT HOME PAGE ------------- */
+
+.collection .slick-slider {
+  display: flex !important;
+  align-items: center;
+}
+
+/* ------------ COLLECTION CARD ------------- */
+

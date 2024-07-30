@@ -1,0 +1,40 @@
+.bottom-btn-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+}
+
+.top-btn {
+    font-size: 1.2rem;
+    width: 3rem;
+    height: 3rem;
+    color: #fff;
+    background: linear-gradient(105deg, #E2257A 50%, #563BDA 100%);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2.2rem;
+    right: 2.5rem;
+    /* z-index: 999; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.top-btn .top-btn--icon {
+    animation: gototop 1.2s linear infinite alternate-reverse;
+}
+
+@keyframes gototop {
+    0% {
+        transform: translateY(-0.4rem);
+    }
+
+    100% {
+        transform: translateY(0.6rem);
+    }
+}
