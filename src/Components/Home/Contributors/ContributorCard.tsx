@@ -11,6 +11,7 @@ interface CardProps {
   walletAddress?: string;
   img?: string;
   ethAmount?: string;
+  role?: string;
 }
 
 const ContributorCard: React.FC<CardProps> = ({
@@ -18,6 +19,7 @@ const ContributorCard: React.FC<CardProps> = ({
   ethAmount,
   img,
   walletAddress,
+  role,
 }) => {
   const navigate = useNavigate();
   return (
@@ -37,9 +39,11 @@ const ContributorCard: React.FC<CardProps> = ({
             height={100}
             width={100}
           />
-          <div className=" absolute -top-1 -right-1 bg-cyan-500 rounded-full p-1">
-            <FaCheck className=" text-white text-xs" />
-          </div>
+          {role === "celebrity" && (
+            <div className=" absolute -top-1 -right-1 bg-cyan-500 rounded-full p-1">
+              <FaCheck className=" text-white text-xs" />
+            </div>
+          )}
         </div>
         <div className=" flex flex-col justify-center items-center gap-2">
           <h4

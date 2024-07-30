@@ -300,16 +300,10 @@ export const faqs: FAQsData[] = [
     ],
   },
   {
-    question:
-      "How to register at Ethernity.io and connect your MetaMask wallet?",
+    question: "How to register at Euphoria and connect your MetaMask wallet?",
     answer: [
-      'Click "Sign Up" on the Ethernity.io homepage',
-      "Enter your email address, select a username and password",
-      "A code will be delivered to your email, retrieve the code and enter it where prompted.",
-      'Sign in to Ethernity using your credentials and click "Connect"',
-      "Sign into your MetaMask account",
-      'Click "Accept"',
-      "You have now connected your MetaMask wallet on Ethernity",
+      'Click "Connect Wallet" on the Euphoria homepage',
+      "Then create your profile",
     ],
   },
   {
@@ -317,33 +311,21 @@ export const faqs: FAQsData[] = [
     answer: [`You can currently buy ERN on the following exchanges:`],
   },
   {
-    question: "How can I send a NFT to another person?",
+    question: "How do I place a bid on an NFT auction?",
     answer: [
-      "To transfer your aNFT to another wallet address, you will need to:",
-      "Step 1: Log in to your account and connect your Metamask wallet.",
-      "Step 2: Visit “My Profile” section and select the aNFT you would like to send.",
-      "Step 3: Click on “Transfer” icon and define the recipient’s wallet address.",
-      "Step 4: Validate the transaction in the Metamask pop-up window.",
+      "To place a bid, first ensure your wallet is connected and funded. Navigate to the NFT auction page, enter your bid amount, and click 'Place Bid'. Confirm the transaction in your wallet to finalize your bid.",
     ],
   },
   {
-    question: "How can I send a NFT to another person?",
+    question: "What is the bidding process on Euphoria?",
     answer: [
-      "To transfer your aNFT to another wallet address, you will need to:",
-      "Step 1: Log in to your account and connect your Metamask wallet.",
-      "Step 2: Visit “My Profile” section and select the aNFT you would like to send.",
-      "Step 3: Click on “Transfer” icon and define the recipient’s wallet address.",
-      "Step 4: Validate the transaction in the Metamask pop-up window.",
+      "Bidding on Euphoria involves placing incremental bids on NFTs listed for auction. The highest bid at the end of the auction period wins the NFT.",
     ],
   },
   {
-    question: "How can I send a NFT to another person?",
+    question: "How do I know if I won an auction?",
     answer: [
-      "To transfer your aNFT to another wallet address, you will need to:",
-      "Step 1: Log in to your account and connect your Metamask wallet.",
-      "Step 2: Visit “My Profile” section and select the aNFT you would like to send.",
-      "Step 3: Click on “Transfer” icon and define the recipient’s wallet address.",
-      "Step 4: Validate the transaction in the Metamask pop-up window.",
+      "If you win an auction, you will receive a notification through the platform and your connected wallet. The NFT will be automatically transferred to your wallet upon successful completion of the auction.",
     ],
   },
 ];
@@ -392,7 +374,8 @@ export const AllCollections: CollectionsData[] = [
     category: "Cricket",
     featured: true,
     name: "Checks - VV Edition",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
     creatorEarning: 5,
     totalItems: 2500,
     createdAt: "Dec 2023",
@@ -436,7 +419,7 @@ export const AllCollections: CollectionsData[] = [
     inDollars: 0,
     image: "",
     endAt: 0,
-    startAt: 0
+    startAt: 0,
   },
   {
     id: 2,
@@ -450,7 +433,8 @@ export const AllCollections: CollectionsData[] = [
     category: "Cricket",
     featured: true,
     name: "Azuki Elementals",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
     creatorEarning: 5,
     totalItems: 2500,
     createdAt: "Dec 2023",
@@ -532,7 +516,7 @@ export const AllCollections: CollectionsData[] = [
     inDollars: 0,
     image: "",
     endAt: 0,
-    startAt: 0
+    startAt: 0,
   },
   {
     id: 3,
@@ -546,7 +530,8 @@ export const AllCollections: CollectionsData[] = [
     category: "Racing Games",
     featured: true,
     name: "Moon Birds",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
     creatorEarning: 5,
     totalItems: 2500,
     createdAt: "Dec 2023",
@@ -590,7 +575,7 @@ export const AllCollections: CollectionsData[] = [
     inDollars: 0,
     image: "",
     endAt: 0,
-    startAt: 0
+    startAt: 0,
   },
   {
     id: 4,
@@ -604,7 +589,8 @@ export const AllCollections: CollectionsData[] = [
     category: "Cricket",
     featured: true,
     name: "RG - Bytes",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
     creatorEarning: 5,
     totalItems: 2500,
     createdAt: "Dec 2023",
@@ -648,7 +634,7 @@ export const AllCollections: CollectionsData[] = [
     inDollars: 0,
     image: "",
     endAt: 0,
-    startAt: 0
+    startAt: 0,
   },
   {
     id: 5,
@@ -662,7 +648,8 @@ export const AllCollections: CollectionsData[] = [
     category: "Football",
     featured: false,
     name: "Tin Fun",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
     creatorEarning: 5,
     totalItems: 2500,
     createdAt: "Dec 2023",
@@ -706,7 +693,7 @@ export const AllCollections: CollectionsData[] = [
     inDollars: 0,
     image: "",
     endAt: 0,
-    startAt: 0
+    startAt: 0,
   },
   {
     id: 6,
@@ -720,7 +707,8 @@ export const AllCollections: CollectionsData[] = [
     category: "Badminton",
     featured: false,
     name: "TenJIN",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
     creatorEarning: 5,
     totalItems: 2500,
     createdAt: "Dec 2023",
@@ -764,7 +752,7 @@ export const AllCollections: CollectionsData[] = [
     inDollars: 0,
     image: "",
     endAt: 0,
-    startAt: 0
+    startAt: 0,
   },
   {
     id: 7,
@@ -778,7 +766,8 @@ export const AllCollections: CollectionsData[] = [
     category: "Cricket",
     featured: false,
     name: "De-GOD",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
     creatorEarning: 5,
     totalItems: 2500,
     createdAt: "Dec 2023",
@@ -822,7 +811,7 @@ export const AllCollections: CollectionsData[] = [
     inDollars: 0,
     image: "",
     endAt: 0,
-    startAt: 0
+    startAt: 0,
   },
 ];
 
@@ -868,7 +857,8 @@ export const Users: UsersData[] = [
         featured: true,
         onSale: false,
         name: "Checks - VV Edition",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
+        description:
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
         creatorEarning: 5,
         totalItems: 2500,
         createdAt: "Dec 2023",
@@ -912,7 +902,7 @@ export const Users: UsersData[] = [
         inDollars: 0,
         image: "",
         endAt: 0,
-        startAt: 0
+        startAt: 0,
       },
       {
         id: 5,
@@ -926,7 +916,8 @@ export const Users: UsersData[] = [
         featured: false,
         onSale: true,
         name: "Tin Fun",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
+        description:
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
         creatorEarning: 5,
         totalItems: 2500,
         createdAt: "Dec 2023",
@@ -970,7 +961,7 @@ export const Users: UsersData[] = [
         inDollars: 0,
         image: "",
         endAt: 0,
-        startAt: 0
+        startAt: 0,
       },
       {
         id: 6,
@@ -984,7 +975,8 @@ export const Users: UsersData[] = [
         featured: false,
         onSale: true,
         name: "TenJIN",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
+        description:
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
         creatorEarning: 5,
         totalItems: 2500,
         createdAt: "Dec 2023",
@@ -1028,7 +1020,7 @@ export const Users: UsersData[] = [
         inDollars: 0,
         image: "",
         endAt: 0,
-        startAt: 0
+        startAt: 0,
       },
       {
         id: 7,
@@ -1042,7 +1034,8 @@ export const Users: UsersData[] = [
         featured: false,
         onSale: true,
         name: "De-GOD",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
+        description:
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
         creatorEarning: 5,
         totalItems: 2500,
         createdAt: "Dec 2023",
@@ -1086,7 +1079,7 @@ export const Users: UsersData[] = [
         inDollars: 0,
         image: "",
         endAt: 0,
-        startAt: 0
+        startAt: 0,
       },
     ],
   },
@@ -1112,7 +1105,8 @@ export const Users: UsersData[] = [
         category: "Badminton",
         featured: false,
         name: "TenJIN",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
+        description:
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
         creatorEarning: 5,
         totalItems: 2500,
         createdAt: "Dec 2023",
@@ -1156,7 +1150,7 @@ export const Users: UsersData[] = [
         inDollars: 0,
         image: "",
         endAt: 0,
-        startAt: 0
+        startAt: 0,
       },
       {
         id: 1,
@@ -1170,7 +1164,8 @@ export const Users: UsersData[] = [
         category: "Cricket",
         featured: true,
         name: "Checks - VV Edition",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
+        description:
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
         creatorEarning: 5,
         totalItems: 2500,
         createdAt: "Dec 2023",
@@ -1214,7 +1209,7 @@ export const Users: UsersData[] = [
         inDollars: 0,
         image: "",
         endAt: 0,
-        startAt: 0
+        startAt: 0,
       },
       {
         id: 5,
@@ -1228,7 +1223,8 @@ export const Users: UsersData[] = [
         featured: false,
         onSale: true,
         name: "Tin Fun",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
+        description:
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur temporibus nisi illo quam architecto dolor autem repellendus quod, deserunt perferendis, iusto laudantium ab sapiente eum quisquam reiciendis",
         creatorEarning: 5,
         totalItems: 2500,
         createdAt: "Dec 2023",
@@ -1272,7 +1268,7 @@ export const Users: UsersData[] = [
         inDollars: 0,
         image: "",
         endAt: 0,
-        startAt: 0
+        startAt: 0,
       },
     ],
   },

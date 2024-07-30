@@ -154,6 +154,7 @@ const Contributor = () => {
                 name={contributer.username}
                 img={contributer.profilePic}
                 ethAmount={contributer.ethAmount}
+                role={contributer.role}
               />
             ))}
           </Slider>

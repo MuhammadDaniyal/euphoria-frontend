@@ -23,7 +23,7 @@ const carouselData: carouselDataType[] = [
     heading:
       "Discover <span style='color:#B900FF;'>Collect</span> & <span style='color:#B900FF;'>Sell</span>  Extraordinary NFTs Art",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam similique, ratione nisi dolores, quod optio officia eius a doloribus ea iste labore, accusantium dignissimos.zf",
+      "Step into a world where your favorite celebrities' exclusive items come to life as unique NFTs. Join the auction, place your bids, and own a piece of the digital realm that bridges the gap between fans and stars.",
     img: animationData1,
   },
   {
@@ -32,7 +32,7 @@ const carouselData: carouselDataType[] = [
     heading:
       "Unlock the <span style='color:#B900FF;'>Glamour</span>, <span style='color:#B900FF;'>Connect</span> with Digital Realm!",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam similique, ratione nisi dolores, quod optio officia eius a doloribus ea iste labore, accusantium dignissimos.zf",
+      "Discover the magic of digital collectibles with Euphoria. Bid on authenticated celebrity merchandise and fan art, and become part of an exclusive community that celebrates the fusion of glamour and technology.",
     img: carouselImg1,
   },
 ];

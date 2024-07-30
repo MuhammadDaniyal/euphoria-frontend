@@ -120,7 +120,7 @@ const UploadForm: React.FC<UploadFormProps> = ({
         <div className=" flex flex-col gap-6">
           {/* first input */}
           <div>
-            <label className="text-base font-medium">Product Name</label>
+            <label className="text-base font-medium">NFT Name</label>
             <input
               type="text"
               placeholder="e.g. Digital Awesome Game"

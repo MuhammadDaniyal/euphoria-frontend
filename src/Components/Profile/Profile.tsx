@@ -7,6 +7,7 @@ import MarketPlaceCard from "../Shared/MarketPlaceCard";
 import { _Nft } from "../../types/index";
 import { getJson } from "../../helpers/apiInstance";
 import { errorToastify, succesToastify } from "../../utils/toast";
+import { FaCheck } from "react-icons/fa6";
 
 // IMAGES
 
@@ -230,8 +231,8 @@ const Profile = () => {
             className={`h-[75%] rounded-tl-xl rounded-tr-xl bg-cover bg-no-repeat bg-center`}
             style={{
               backgroundImage: `linear-gradient(
-                rgba(0, 0, 0, 0.3), 
-                rgba(0, 0, 0, 0.3)
+                rgba(0, 0, 0, 0.5), 
+                rgba(0, 0, 0, 0.5)
               ), url(${
                 pData && pData.coverPic
                   ? pData.coverPic
@@ -250,10 +251,17 @@ const Profile = () => {
               />
               <div className=" w-full flex md:flex-col md:justify-start justify-between md:pt-8">
                 <div className=" flex flex-col">
-                  <h3 className=" md:text-xl text-sm font-bold">
-                    {pData && pData.name}
-                  </h3>
-                  <p className="md:text-base text-xs text-[#b725ff] font-medium">
+                  <div className=" flex justify-start items-center gap-3">
+                    <h3 className=" md:text-xl text-sm font-bold">
+                      {pData && pData.name}
+                    </h3>
+                    {pData && pData?.role === "celebrity" && (
+                      <div className=" bg-cyan-500 rounded-full p-1">
+                        <FaCheck className=" text-white text-xs" />
+                      </div>
+                    )}
+                  </div>
+                  <p className="md:text-base text-xs font-semibold text-[#b725ff]">
                     @{pData && pData.username}
                   </p>
                 </div>
