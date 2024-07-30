@@ -21,7 +21,7 @@ const DetailTab = ({ auc }: { auc: _Nft }) => {
       try {
         setLoading(true);
         const response = await fetch(
-          `https://euphoria-backend-production.up.railway.app/api/profile/names?status=accepted`
+          `http://localhost:8000/api/profile/names?status=accepted`
         );
         const profiles: UserProfile[] = await response.json();
         const user = profiles.find(

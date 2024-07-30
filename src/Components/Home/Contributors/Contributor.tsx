@@ -106,7 +106,7 @@ const Contributor = () => {
     (async () => {
       try {
         const response = await getJson(
-          `https://euphoria-backend-production.up.railway.app/api/profile/profiles?status=accepted`
+          `http://localhost:8000/api/profile/profiles?status=accepted`
         );
         if (response) {
           const contributorsWithBalances = await Promise.all(

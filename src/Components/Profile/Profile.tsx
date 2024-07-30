@@ -165,7 +165,7 @@ const Profile = () => {
         setLoading(true);
 
         const response = await getJson(
-          `https://euphoria-backend-production.up.railway.app/api/profile/${userid?.toLowerCase()}`
+          `http://localhost:8000/api/profile/${userid?.toLowerCase()}`
         );
         setPdata(response);
         const list: any = await ownAuctionList(userid, 4, "a", "a"); // return nfts which own

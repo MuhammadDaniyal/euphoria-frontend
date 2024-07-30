@@ -46,7 +46,7 @@ const EditProfileModal = ({
 
   const getProfileData = async () => {
     const response = await getJson(
-      `https://euphoria-backend-production.up.railway.app/api/profile/${
+      `http://localhost:8000/api/profile/${
         profileData && profileData.walletAddress
       }`
     );
@@ -96,7 +96,7 @@ const EditProfileModal = ({
       setLoading(true);
       try {
         const res = await patchJsonUrl(
-          `https://euphoria-backend-production.up.railway.app/api/profile/${profileData.walletAddress}/update`,
+          `http://localhost:8000/api/profile/${profileData.walletAddress}/update`,
           formData
         );
         if (res) {

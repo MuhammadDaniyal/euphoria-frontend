@@ -30,7 +30,7 @@ const BidTab = ({ addres, dollar }: { addres: any; dollar: number }) => {
       try {
         setLoading(true)
         const response = await fetch(
-          `https://euphoria-backend-production.up.railway.app/api/profile/names?status=accepted`
+          `http://localhost:8000/api/profile/names?status=accepted`
         );
         const profiles = await response.json();
         setUserProfiles(profiles);
