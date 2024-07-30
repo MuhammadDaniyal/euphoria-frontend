@@ -81,7 +81,7 @@ const ProfileForm = ({ type }: { type: string }) => {
       try {
         //un coment above line and write down profile creation api below:
         const res = await postJson(
-          "http://localhost:8000/api/profile",
+          `${process.env.BASE_URL}/api/profile`,
           formData
         );
         if (res) {

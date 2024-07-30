@@ -165,7 +165,7 @@ const Profile = () => {
         setLoading(true);
 
         const response = await getJson(
-          `http://localhost:8000/api/profile/${userid?.toLowerCase()}`
+          `${process.env.BASE_URL}/api/profile/${userid?.toLowerCase()}`
         );
         setPdata(response);
         const list: any = await ownAuctionList(userid, 4, "a", "a"); // return nfts which own

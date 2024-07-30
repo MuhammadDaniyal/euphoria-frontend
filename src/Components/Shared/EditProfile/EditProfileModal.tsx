@@ -46,7 +46,7 @@ const EditProfileModal = ({
 
   const getProfileData = async () => {
     const response = await getJson(
-      `http://localhost:8000/api/profile/${
+      `${process.env.BASE_URL}/api/profile/${
         profileData && profileData.walletAddress
       }`
     );
@@ -96,7 +96,7 @@ const EditProfileModal = ({
       setLoading(true);
       try {
         const res = await patchJsonUrl(
-          `http://localhost:8000/api/profile/${profileData.walletAddress}/update`,
+          `${process.env.BASE_URL}/api/profile/${profileData.walletAddress}/update`,
           formData
         );
         if (res) {

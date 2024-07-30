@@ -49,7 +49,7 @@ const MarketPlaceCard: React.FC<MarketCardProps> = ({
   useEffect(() => {
     const fetchUserProfiles = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/profile/names?status=accepted");
+        const response = await fetch(`${process.env.BASE_URL}/api/profile/names?status=accepted`);
         const profiles = await response.json();
         setUserProfiles(profiles);
       } catch (error) {

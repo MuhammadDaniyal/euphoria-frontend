@@ -32,7 +32,7 @@ const HistoryTab = ({ value, dollar }: { value: NftHis[]; dollar: number }) => {
       try {
         setLoading(true)
         const response = await fetch(
-          "http://localhost:8000/api/profile/names?status=accepted"
+          `${process.env.BASE_URL}/api/profile/names?status=accepted`
         );
         const profiles: UserProfile[] = await response.json();
         setUserProfiles(profiles);

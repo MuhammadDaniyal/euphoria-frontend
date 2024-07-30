@@ -106,7 +106,7 @@ const Contributor = () => {
     (async () => {
       try {
         const response = await getJson(
-          `http://localhost:8000/api/profile/profiles?status=accepted`
+          `${process.env.BASE_URL}/api/profile/profiles?status=accepted`
         );
         if (response) {
           const contributorsWithBalances = await Promise.all(

@@ -46,7 +46,7 @@ const ProposalsTable = () => {
   const fetchProposalsData = async () => {
     try {
         // Fetch proposals data
-        const response: any[] = await getJson("http://localhost:8000/api/profile/celebrities?status=pending");
+        const response: any[] = await getJson(`${process.env.BASE_URL}/api/profile/celebrities?status=pending`);
         // console.log("response", response);
 
         if (response && Array.isArray(response)) {
@@ -134,7 +134,7 @@ const ProposalsTable = () => {
   // const fetchProposalsData = async () => {
   //   try {
   //     // Fetch proposals data
-  //     const response = await getJson("http://localhost:8000/api/profile/celebrities?status=pending");
+  //     const response = await getJson("${process.env.BASE_URL}/api/profile/celebrities?status=pending");
   //     console.log("response", response);
   
   //     if (response && Array.isArray(response)) {
@@ -184,7 +184,7 @@ const ProposalsTable = () => {
 
   // const fetchProposalsData = async () => {
   //   const response = await getJson(
-  //     "http://localhost:8000/api/profile/celebrities?status=pending"
+  //     "${process.env.BASE_URL}/api/profile/celebrities?status=pending"
   //   );
   //   if (response) {
   //     // setData(response);
@@ -209,7 +209,7 @@ const ProposalsTable = () => {
   // const fetchProposalsData = async () => {
   //   try {
   //     // Fetch proposals data
-  //     const response = await getJson("http://localhost:8000/api/profile/celebrities?status=pending");
+  //     const response = await getJson("${process.env.BASE_URL}/api/profile/celebrities?status=pending");
   //     console.log("response",response)
   //     if (response) {
   //       // Transform the proposals data

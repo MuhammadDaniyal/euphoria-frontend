@@ -239,7 +239,7 @@ const Sidebar = (props: Props) => {
   //   const fetchData = async () => {
   //     try {
   //       const add = await getAdd()
-  //       const response = await getJson(`http://localhost:8000/api/profile/${add}`);
+  //       const response = await getJson(`${process.env.BASE_URL}/api/profile/${add}`);
   //       if (response) {
   //         setuserData(response)
   //         // console.log("==>", response)
@@ -281,7 +281,7 @@ const Sidebar = (props: Props) => {
 
       //==========
       const response = await getJson(
-        `http://localhost:8000/api/profile/${walletData.walletAddress}`
+        `${process.env.BASE_URL}/api/profile/${walletData.walletAddress}`
       );
       if (response) {
         console.log("ress",response)

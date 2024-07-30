@@ -21,7 +21,7 @@ const DetailTab = ({ auc }: { auc: _Nft }) => {
       try {
         setLoading(true);
         const response = await fetch(
-          "http://localhost:8000/api/profile/names?status=accepted"
+          `${process.env.BASE_URL}/api/profile/names?status=accepted`
         );
         const profiles: UserProfile[] = await response.json();
         const user = profiles.find(
