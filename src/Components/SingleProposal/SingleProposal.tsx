@@ -31,7 +31,7 @@ const SingleProposal = () => {
   const fetchSingleProposalData = async (walletAddress: any) => {
     try {
       const response = await getJson(
-        `${process.env.BASE_URL}/api/profile/${walletAddress}`
+        `https://euphoria-backend-production.up.railway.app/api/profile/${walletAddress}`
       );
       const data = await singleVoting(walletAddress);
       console.log("sip===>", data);

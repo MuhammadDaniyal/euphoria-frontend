@@ -51,7 +51,7 @@ export const patchJsonUrl = async (url: string, body: any) => {
 };
 
 export const patchJson = async (add: string, body: any) => {
-  const url = `${process.env.BASE_URL}/api/profile/${add}/status`
+  const url = `https://euphoria-backend-production.up.railway.app/api/profile/${add}/status`
   const response = await axios.patch(url, body, {
     headers: {
       "Content-Type": "application/json",
