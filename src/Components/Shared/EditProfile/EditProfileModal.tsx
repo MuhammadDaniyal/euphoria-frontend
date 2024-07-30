@@ -5,7 +5,7 @@ import { LuPencilLine } from "react-icons/lu";
 import { FaPencilAlt } from "react-icons/fa";
 import StyledButton from "../StyledButton";
 import { useFormik } from "formik";
-import { patchJsonUrl, getJson } from "../../../helpers/apiInstance";
+import { patchJsonUrl, getJson, patchForm } from "../../../helpers/apiInstance";
 import { succesToastify } from "../../../utils/toast";
 import noImage from "../../../assets/images/no-image.jpg";
 import { FiEdit } from "react-icons/fi";
@@ -95,7 +95,7 @@ const EditProfileModal = ({
       }
       setLoading(true);
       try {
-        const res = await patchJsonUrl(
+        const res = await patchForm(
           `http://localhost:8000/api/profile/${profileData.walletAddress}/update`,
           formData
         );
