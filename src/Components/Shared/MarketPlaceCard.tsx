@@ -67,8 +67,6 @@ const MarketPlaceCard: React.FC<MarketCardProps> = ({
 
   useEffect(() => {
     const userProfile = getUserProfile(userName.toLowerCase());
-    console.log("UserProfile: ", userProfile); // Debug log
-    console.log("UserName: ", userName); // Debug log
     if (userProfile) {
       setUserDisplayName(userProfile.username);
       setUserProfilePic(userProfile.profilePic); // Set profile pic from API

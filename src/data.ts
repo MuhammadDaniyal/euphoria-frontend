@@ -303,7 +303,7 @@ export const faqs: FAQsData[] = [
     question: "How to register at Euphoria and connect your MetaMask wallet?",
     answer: [
       'Click "Connect Wallet" on the Euphoria homepage',
-      "Then create your profile",
+      " Then create your profile",
     ],
   },
   {
